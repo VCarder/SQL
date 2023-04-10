@@ -1,0 +1,39 @@
+/** Store list
+Kpop Albums
+Kpop Photocards
+Binders
+Hard Protector Sleeves
+Soft Protector Sleeves
+Inserts
+Stickers for Decoration
+Free Stickers
+CD case
+Photocard list
+Kpop jackets
+kpop jewelry
+kpop plushies
+Kpop bags
+Protector sleeves for binders
+**/
+
+CREATE TABLE store_merchandise (id INTEGER PRIMARY KEY, name TEXT , price INTEGER, quantity INTEGER, aisle INTEGER) ;
+
+INSERT INTO store_merchandise VALUES (1, "Kpop Albums", 25, 5, 1);
+INSERT INTO store_merchandise VALUES (2, "Kpop Photocards", 10, 3, 2);
+INSERT INTO store_merchandise VALUES (3, "Binders", 7, 6, 3);
+INSERT INTO store_merchandise VALUES (4, "Hard protector sleeves", 5, 15, 1);
+INSERT INTO store_merchandise VALUES (5, "soft protector sleeves", 5, 20, 1);
+INSERT INTO store_merchandise VALUES (6, "Inserts", 3, 67, 3);
+INSERT INTO store_merchandise VALUES (7, "Stickers for decoration", 1, 50, 2);
+INSERT INTO store_merchandise VALUES (8, "Free Stickers", 0, 100, 1);
+INSERT INTO store_merchandise VALUES  (9, "CD Case", 4, 100, 3);
+INSERT INTO store_merchandise VALUES (10, "Photocard list", 1, 300, 1);
+INSERT INTO store_merchandise VALUES (11, "Kpop jackets", 30, 10, 3);
+INSERT INTO store_merchandise VALUES (12, "Kpop Jewelry", 15, 50, 3);
+INSERT INTO store_merchandise VALUES (13, "Kpop Plushies", 35, 25, 3);
+INSERT INTO store_merchandise VALUES (14, "KPop Bags", 40, 25, 3);
+INSERT INTO store_merchandise VALUES (15, "Protector sleeves for binder", 2, 100, 1);
+
+Select MAX(quantity)From store_merchandise;
+
+SELECT * FROM store_merchandise ORDER BY price
